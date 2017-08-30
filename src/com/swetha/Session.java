@@ -9,6 +9,6 @@ public class Session {
     public Date startDate;
     public int duration;
     public int totalSeats;
-    //public int availableSeats;
+    public int availableSeats;
 
 }
