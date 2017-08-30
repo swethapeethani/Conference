@@ -1,7 +1,5 @@
 package com.swetha;
 
-import java.util.ArrayList;
-
 public class Registration {
 
     public User user;

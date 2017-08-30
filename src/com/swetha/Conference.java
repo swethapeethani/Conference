@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Conference {
 
     public ArrayList<Session> sessions = new ArrayList<>();
-    public ArrayList<Registration> registrations = new ArrayList<>();
+    private ArrayList<Registration> registrations = new ArrayList<>();
 
 
     public void showListOfSessions() {
@@ -28,12 +28,7 @@ public class Conference {
     }
 
     private boolean isSeatAvailableForSession(Session session) {
-        if (session.availableSeats != 0) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return session.availableSeats != 0;
     }
 
 

@@ -1,9 +1,11 @@
 package com.swetha;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
+    public static final String ENTER_THE_SESSION_TITLE = "Enter the Session title";
+    public static final String ENTER_USERNAME = "Enter username";
 
     public static void main(String[] args) {
 
@@ -46,11 +48,10 @@ public class Main {
                     }
                     break;
                 case 3: {
-                    System.out.println("Enter the Session title");
+                    System.out.println(ENTER_THE_SESSION_TITLE);
                     String sessionTitle = sc.next();
-                    System.out.println("Enter username");
+                    System.out.println(ENTER_USERNAME);
                     String userName = sc.next();
-                    new Session();
                     Session registerForSession = conference.getSessionByTitle(sessionTitle);
                     if (registerForSession == null) {
                         System.out.println("Session title doesn't match ");
